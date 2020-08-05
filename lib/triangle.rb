@@ -1,4 +1,3 @@
-require 'pry'
 class Triangle
   attr_accessor :a, :b, :c
 
@@ -9,7 +8,6 @@ class Triangle
   end
 
   def kind
-    #binding.pry
     validate_triangle
     if @a == @b && @b == @c
       return :equilateral
